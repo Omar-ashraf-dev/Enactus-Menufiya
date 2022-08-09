@@ -1,0 +1,115 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body, html {
+    height: 100%;
+}
+
+#header-nav {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    overflow: hidden;
+}
+#container {
+    display: flex;
+    float: left;
+}
+#header-img {
+    width: 100px;
+    padding-left: 20px;
+}
+#nav-bar {
+    float: right;
+    overflow: hidden;
+    height: 72px;
+    align-items: center;
+    display: flex;
+}
+#nav-bar a {
+    padding: 18px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+#nav-bar a:hover {
+    background-color: #ffc222;
+    height: 36px;
+    color: black;
+}
+#page {
+    padding-top: 72px;
+}
+@media (max-width: 800px){
+    #header-nav {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    #nav-bar {
+        display: grid;
+        height: auto;
+        width: 100%;
+    }
+    #nav-bar a:hover {
+        height: 18px;
+    }
+    #header-img {
+        padding-left: 0;
+    }
+    #nav-bar a {
+        text-align: center;
+    }
+    #page {
+        padding-top: 0;
+    }
+}
+
+#slogan {
+    background-image: url("/data/banner1-2.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-left: 100px;
+}
+
+.enactus-slogan {
+    font-weight: 900;
+    color: #232D39;
+    font-size: 74px;
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'Knockout 92 A', 'Knockout 92 B', sans-serif;
+}
+.enactus-slogan span.investing {
+    margin: 0;
+    padding: 0;
+    font-size: 31px;
+    color: #232D39;
+}
+.enactus-slogan span.entrepreneurial {
+    letter-spacing: 2.9px;
+    color: #232D39;
+}
+.enactus-slogan span {
+    margin: 0;
+    padding: 0;
+    color: #fdc03c;
+}
+.enactus-slogan span.creates {
+    display: block;
+    padding: 0;
+    font-size: 48px;
+    color: #232D39;
+}
